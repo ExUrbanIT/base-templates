@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Business Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Your Logo</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <section class="contact-hero">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Reach out with any questions, feedback, or collaboration ideas.</p>
+  </section>
+
+  <section class="contact-form-section">
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:info@yourbusiness.com">info@yourbusiness.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></p>
+      <p><strong>Hours:</strong> Monday–Friday, 9am–5pm</p>
+    </div>
+
+    <form class="contact-form" action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+
+      <p class="form-response" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section class="map-section">
+    <h2>Our Location</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509388!2d144.95373531550446!3d-37.81627927975161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f76a47%3A0xbec73d3c156fb8e3!2sFederation+Square!5e0!3m2!1sen!2sus!4v1611111111111!5m2!1sen!2sus" 
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </section>
+</main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Business Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emerald Tower</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    body {
+      background: radial-gradient(circle, #000000, #050505 60%, #0a0a0a 100%);
+      color: #00ffcc;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #39ff14;
+      text-shadow: 0 0 15px #39ff14;
+    }
+
+    .terminal-intro {
+      background: rgba(0, 255, 204, 0.1);
+      padding: 1rem;
+      border-left: 4px solid #00ffcc;
+      border-radius: 8px;
+      max-width: 700px;
+      margin: 2rem auto;
+      text-align: left;
+      font-size: 1rem;
+      white-space: pre-wrap;
+      box-shadow: 0 0 20px #00ffcc;
+    }
+
+    .spellbook {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 3rem auto;
+    }
+
+    .spell {
+      background: rgba(0, 255, 153, 0.08);
+      border: 1px solid #00ff99;
+      padding: 1rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px transparent;
+      cursor: pointer;
+    }
+
+    .spell:hover {
+      background: rgba(0, 255, 153, 0.2);
+      box-shadow: 0 0 15px #00ff99;
+      transform: scale(1.03);
+    }
+
+    .spell h3 {
+      margin-top: 0;
+      color: #39ff14;
+      font-size: 1.2rem;
+    }
+
+    .spell p {
+      font-size: 0.95rem;
+      color: #ccffee;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to the Emerald Tower</h1>
+
+  <div class="terminal-intro">
+    <pre id="terminal-output"></pre>
+  </div>
+
+  <section class="spellbook">
+    <div class="spell" onclick="cast('customAnimation')">
+      <h3>customAnimation()</h3>
+      <p>Motion design, keyframes, parallax, and canvas effects.</p>
+    </div>
+    <div class="spell" onclick="cast('apiIntegration')">
+      <h3>apiIntegration()</h3>
+      <p>Real-time data, AI endpoints, automation, and dashboards.</p>
+    </div>
+    <div class="spell" onclick="cast('eCommerceBuild')">
+      <h3>eCommerceBuild()</h3>
+      <p>Shop systems, checkout flows, discount logic, subscriptions.</p>
+    </div>
+    <div class="spell" onclick="cast('bookingPlatform')">
+      <h3>bookingPlatform()</h3>
+      <p>Calendars, forms, reminders, client portals.</p>
+    </div>
+    <div class="spell" onclick="cast('cmsMigration')">
+      <h3>cmsMigration()</h3>
+      <p>WordPress to Custom. Shopify to Static. Wix to Wow.</p>
+    </div>
+    <div class="spell" onclick="cast('aiAssistant')">
+      <h3>aiAssistant()</h3>
+      <p>Custom GPTs, local memory, workflow bots, spiritual archives.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> ExUrban Technologies • Dev Magic Made Real
+  </footer>
+
+  <script>
+    const terminalLines = [
+      "> Initializing Dev Spell Engine...",
+      "> Loading modules: animation, ai, commerce, cms...",
+      "> Emerald Tower terminal ready. Select your spell."
+    ];
+
+    const output = document.getElementById("terminal-output");
+    let line = 0;
+    let char = 0;
+
+    function typeLine() {
+      if (line < terminalLines.length) {
+        if (char < terminalLines[line].length) {
+          output.textContent += terminalLines[line][char];
+          char++;
+          setTimeout(typeLine, 35);
+        } else {
+          output.textContent += '\n';
+          line++;
+          char = 0;
+          setTimeout(typeLine, 350);
+        }
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', typeLine);
+
+    function cast(spell) {
+      alert(`✨ Executing ${spell}()\n>> Feature loaded successfully.`);
+    }
+
+    // Update copyright
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

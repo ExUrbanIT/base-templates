@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Title Here</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Exurban Technologies</div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <section class="appointments-hero">
+    <h1>Book an Appointment</h1>
+    <p>Schedule your session with ease. Just fill out the form below.</p>
+  </section>
+
+  <section class="appointments-form-section">
+    <form class="appointments-form" action="#" method="post">
+      <label for="service">Service</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option value="consult">Business Consultation</option>
+        <option value="healing">Energy Healing Session</option>
+        <option value="reading">Intuitive Reading</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Preferred Time</label>
+      <input type="time" id="time" name="time" required />
+
+      <label for="notes">Additional Notes</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Tell us anything you'd like us to know..."></textarea>
+
+      <button type="submit">Request Appointment</button>
+    </form>
+  </section>
+</main>
+
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Business Name. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

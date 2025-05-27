@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enter the Diamond Tower</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Courier New', monospace;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    /* Fullscreen video */
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 0 40px #00fff7;
+    }
+
+    .content h1 {
+      font-size: 2.8rem;
+      color: #ffe100;
+      text-shadow: 0 0 12px #ffe100;
+      margin-bottom: 1.5rem;
+    }
+
+    .content a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 2rem;
+      background: #00fff7;
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      box-shadow: 0 0 20px #00fff7;
+      transition: 0.3s ease-in-out;
+    }
+
+    .content a:hover {
+      background: #39ff14;
+      box-shadow: 0 0 25px #39ff14;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌌 Background video -->
+  <video class="background-video" autoplay muted loop playsinline>
+    <source src="../assets/video/exu-path.mp4" type="video/mp4" />
+     Your browser does not support the video tag.
+  </video>
+
+  <!-- 💎 Overlay content -->
+  <div class="content">
+    <h1>Follow the Yellow Brick Stream</h1>
+    <a href="diamond-tower.html">Enter the Diamond Tower</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,749 @@
+:root {
+  --primary-color: #222;
+  --accent-color: #e63946;
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.hero {
+  text-align: center;
+  padding: 3rem;
+  background: #eee;
+}
+
+.about-hero {
+  background: #eee;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+/* ----------------------------------------------
+   Header & Navigation Styles
+---------------------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0b0c10;
+  color: white;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #fdd835; /* sunflower yellow accent */
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1 1 300px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* -------------------------------------
+   Contact Page Styles
+-------------------------------------- */
+.contact-hero {
+  background: #eee;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-form button {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.form-response {
+  margin-top: 1rem;
+  color: green;
+  font-weight: bold;
+}
+
+.map-section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Then continue with... */
+button {
+  background: var(--accent-color);
+  color: white;
+  /* etc */
+}
+
+.contact-hero {
+  background: #eee;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-form button {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* ------------------ */
+/* 🧰 Services Page    */
+/* ------------------ */
+
+.services-hero {
+  background: #eee;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.services-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ------------------ */
+/* 🍽️ Menu Page        */
+/* ------------------ */
+
+.menu-hero {
+  background: #eee;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.menu-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.menu-item h2 {
+  margin-bottom: 0.5rem;
+}
+
+.menu-item .price {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+/* ------------------ */
+/* 📅 Appointments Page */
+/* ------------------ */
+
+.appointments-hero {
+  background: #eee;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.appointments-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.appointments-form-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.appointments-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.appointments-form label {
+  font-weight: bold;
+}
+
+.appointments-form input,
+.appointments-form select,
+.appointments-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.appointments-form button {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.appointments-form button:hover {
+  opacity: 0.9;
+}
+
+/* ------------------ */
+/* 📅 Appointments Page */
+/* ------------------ */
+
+.appointments-hero {
+  background: #eee;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.appointments-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.appointments-form-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.appointments-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.appointments-form label {
+  font-weight: bold;
+}
+
+.appointments-form input,
+.appointments-form select,
+.appointments-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.appointments-form button {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.appointments-form button:hover {
+  opacity: 0.9;
+}
+
+/* ------------------ */
+/* 🛍️ Shop Page        */
+/* ------------------ */
+
+.shop-hero {
+  background: #eee;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.shop-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.product-card button {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  opacity: 0.9;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ------------------ */
+/* ❓ FAQ Page         */
+/* ------------------ */
+
+.faq-hero {
+  background: #eee;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.faq-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.faq-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.faq-item {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.faq-item h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+/* ------------------ */
+/* 📰 Blog Page         */
+/* ------------------ */
+
+.blog-hero {
+  background: #eee;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.blog-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.blog-list {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blog-post {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.blog-post h2 {
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+.blog-date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.75rem;
+}
+
+.blog-excerpt {
+  margin-bottom: 1rem;
+}
+
+.blog-post a {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ */
+/* 🖼️ Gallery Page       */
+/* ------------------ */
+
+.gallery-hero {
+  background: #eee;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.gallery-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.03);
+}
+
+/* ------------------ */
+/* ⚖️ Legal Pages       */
+/* ------------------ */
+
+.legal-hero {
+  background: #eee;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.legal-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.legal-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+
+.legal-content h2 {
+  margin-top: 2rem;
+  color: var(--accent-color);
+}
+
+/* ------------------ */
+/* 🧙 Behind the Curtain */
+/* ------------------ */
+
+.curtain-experience {
+  background: radial-gradient(circle, #0a0a0a, #000);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  min-height: 100vh;
+}
+
+.intro-scene h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #39ff14;
+}
+
+.intro-scene p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+.yellow-brick-road {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.road {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.monkey {
+  font-size: 3rem;
+  animation: bounce 1.2s infinite alternate;
+}
+
+.tower-door {
+  margin-top: 2rem;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20px); }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text, .about-image {
+    flex: 1 1 100%;
+  }
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background: #00fff7;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 0 20px #00fff7;
+  transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background: #39ff14;
+  box-shadow: 0 0 25px #39ff14;
+}
+
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
